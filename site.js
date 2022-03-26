@@ -1,5 +1,10 @@
 var toastTrigger = document.getElementsByClassName('cardbotones')
 var toastLiveExample = document.getElementById('liveToast')
+var submit = document.getElementById('submit')
+
+if (submit) {
+    alert("Funcionalidad no disponible")
+}
 
 if (toastTrigger[0]) {
     toastTrigger[0].addEventListener('click', function () {
