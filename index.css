@@ -48,17 +48,23 @@ header {
 	color: #fcba03;
 }
 
-#logo { 
-	display: flex;
+#logo-placeholder {
 	height: 100%;
 	width: 20%;
-	align-items: center;
+}
+
+#logo { 
+	/*background-color: red;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 20%;
 }
 
 #logobg {
 	width: 70%;
 	height: 100%;
-	background-image: url('imagenes/logo.svg');
 	background-size: cover;
 	background-position-y: 40%;
 }
@@ -95,7 +101,7 @@ header {
 
 #acceso {
 	display: flex;
-	height: 40%;
+	height: auto;
 	width: 75%;
 	align-items: center;
 	justify-content: center;
@@ -202,13 +208,13 @@ main {
 	font-size: larger;
 }
 
-.item-content h1 {
+.text-container h1 {
 	font-weight: bold;
 }
 
-.item-content a {
+.text-container a {
 	display: flex;
-	height: 35px;
+	height: auto;
 	width: 10%;
 	align-items: center;
 	justify-content: center;
@@ -219,7 +225,7 @@ main {
 	transition: 0.5s;
 }
 
-.item-content a:hover {
+.text-container a:hover {
 	color: #fcba03;
 	background-color: #323232;
 	border-color: #fcba03;
@@ -255,13 +261,15 @@ main {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 13%;
+	height: auto;
 	/*background-color: aqua;*/
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 
 #firstcont-1 {
 	width: 45%;
-	height: 80%;
+	height: fit-content;
 	margin-left: 3%;
 	background-color: #242424;
 	border-radius: 20px;
@@ -286,15 +294,15 @@ title h1 {
 
 }
 
-#sticky {
+.sticky {
 	display: flex;
-	margin-top: 10%;
+	margin-top: 5%;
 	color: gainsboro;
 	width: 100%;
 	height: fit-content;
 }
 
-#sticky img {
+.sticky img {
 	width: 3%;
 	height: 50%;
 	margin-right: 2%;
@@ -308,15 +316,20 @@ title h1 {
 	margin-left: 3%;
 	margin-right: 3%;
 	width: 45%;
-	height:80%;
+	height: 80%;
 	text-align: center;
 	background-color: #fcba03;
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 #firstcont-2 img {
-	width: 80%;
-	height:80%;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height:90%;
 	margin-top: 5%;
 }
 
@@ -344,9 +357,92 @@ title h1 {
 	padding: 3%;
 }
 
+#text-vid-container {
+	width: 50%;
+	/*background-color: red;*/
+}
 #sctext {
-	width: 45%;
-	margin-right: 5%;
+	width: 100%;
+}
+
+#titulo-video {
+	background-color: #E03F3F;
+	margin-top: 10%;
+	padding: 1.5%;
+	border-radius: 20px;
+}
+
+#titulo-video h3 {
+	display: block;
+	background-color: #242424;
+	padding: 2%;
+	color: gainsboro;
+	margin: 0;
+	border-radius: 20px;
+	text-align: center;
+}
+
+#div-video {
+	position: relative;
+	margin-top: 5%;
+	height: 0;
+	border-radius: 20px;
+	padding-bottom: 56.21%;
+	overflow: hidden;
+}
+
+#div-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#sticky-2 {
+	margin-top: 10%;
+}
+
+#div-newsletter {
+	display: flex;
+	justify-content: center;
+	/*background-color: red;*/
+	color: gainsboro;
+	margin-top: 3%;
+	width: 100%;
+}
+
+#formulario-1 {
+	padding: 3%;
+	border-radius: 20px;
+	background-color: #E03F3F;
+	width: 75%;
+}
+
+#label {
+	background-color: #242424;
+	padding: 3%;
+	border-radius: 20px;
+}
+
+#label h4 {
+	margin: 0;
+}
+
+#campo-1 {
+	width: 100%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	padding: 1.5%;
+	border-radius: 20px;
+	border-style: none;
+	color: #242424;
+}
+
+#campo-1:focus {
+	outline-width: 4px;
+	outline-style: solid;
+	outline-color: #fcba03;
 }
 
 #divcards {
@@ -354,26 +450,7 @@ title h1 {
 	flex-direction: column;
 	width: 50%;
 	height: auto;
-	/*background-color: red;*/
-}
-
-.card {
-	width: 20rem;
-	height: auto;
-	border-radius: 20px;
-	overflow: hidden;
-	border-color: #E03F3F;
-	background-color: #E03F3F;
-	color: gainsboro;
-}
-
-.card img {
-	height: 100%;
-	width: 100%;
-}
-
-.card-body {
-	width: 100%;
+	margin-left: 5%;
 	/*background-color: red;*/
 }
 
@@ -388,6 +465,22 @@ title h1 {
 	display: flex;
 }
 
+.card {
+	width: 20rem;
+	height: auto;
+	border-radius: 20px;
+	overflow: hidden;
+	border-color: #E03F3F;
+	background-color: #E03F3F;
+	color: gainsboro;
+}
+
+.card:hover {
+	outline-color: #fcba03;
+	outline-width: 5px;
+	outline-style: double;
+}
+
 #card-1, #card-3 {
 	margin-right: 10%;
 	margin-left: auto;
@@ -400,10 +493,31 @@ title h1 {
 	background-color: #F4BD42;
 }
 
+.card img {
+	height: 100%;
+	width: 100%;
+}
+
+.card-body {
+	width: 100%;
+}
+
+.card-title {
+	padding: 5%;
+	background-color: #242424;
+	border-radius: 15px;
+}
+
+.card-text {
+	background-color: #242424;
+	border-radius: 15px;
+	padding: 5%;
+}
+
 .cardbotones {
 	background-color: #fcba03;
 	color: #242424;
-	border: #323232;
+	border-color: #fcba03;
 	border-radius: 15px;
 	transition: 0.5s;
 }
@@ -411,7 +525,33 @@ title h1 {
 .cardbotones:hover {
 	background-color: #323232;
 	color: #fcba03;
-	
+	border-color: #fcba03;
+}
+
+.btn:active {
+	transition: 0.2s;
+	margin-left: 15px;
+}
+
+.btn:active:focus {
+	outline: none;
+	box-shadow: none;
+	background-color: #323232;
+	color: #fcba03;
+}
+
+.btn:focus {
+	outline: none;
+	box-shadow: none;
+	background-color: #fcba03;
+	color: #242424;
+	border-color: #fcba03;
+}
+
+.btn:focus:hover {
+	background-color: #323232;
+	color: #fcba03;
+	border-color: #fcba03;
 }
 
 /*SECOND CONTAINER END*/
