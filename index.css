@@ -322,14 +322,15 @@ title h1 {
 	border-radius: 20px;
 	margin-top: 0;
 	margin-bottom: 0;
+	padding: 3%;
 }
 
 #firstcont-2 img {
 	position: relative;
 	top: 0;
 	left: 0;
-	width: 90%;
-	height:90%;
+	width: 80%;
+	height:80%;
 	margin-top: 5%;
 }
 
