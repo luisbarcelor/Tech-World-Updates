@@ -32,3 +32,51 @@ if (toastTrigger[3]) {
         toast.show()
     })
 } 
+
+if (toastTrigger[4]) {
+    toastTrigger[4].addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+    
+        toast.show()
+    })
+} 
+
+if (toastTrigger[5]) {
+    toastTrigger[5].addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+    
+        toast.show()
+    })
+} 
+
+if (toastTrigger[6]) {
+    toastTrigger[6].addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+    
+        toast.show()
+    })
+} 
+
+if (toastTrigger[7]) {
+    toastTrigger[7].addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+    
+        toast.show()
+    })
+} 
+
+if (toastTrigger[8]) {
+    toastTrigger[8].addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+    
+        toast.show()
+    })
+} 
+
+if (toastTrigger[9]) {
+    toastTrigger[9].addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+    
+        toast.show()
+    })
+} 

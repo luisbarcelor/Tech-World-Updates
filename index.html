@@ -5,6 +5,7 @@
     <meta name="viewport" content="width-device-width, initial-scale-1">
     <title>Tech World News - Inicio</title>
     <link rel="icon" type="image/x-icon" href="icons/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -21,11 +22,11 @@
             </div>
         </div>
         <nav id="menu">
-            <a class="menubotones" id="1" href="index.html#header">Inicio</a>
-            <a class="menubotones" id="2" href="#secondcont">Destacado</a>
-            <a class="menubotones" id="3" href="#thirdcont">Top Tips</a>
-            <a class="menubotones" id="4" href="#fourthcont">Productos</a>
-            <a class="dropdown-toggle dropdown menubotones" id="5" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+            <a class="menubotones" id="b1" href="index.html#header">Inicio</a>
+            <a class="menubotones" id="b2" href="#secondcont">Destacado</a>
+            <a class="menubotones" id="b3" href="#thirdcont">Top Tips</a>
+            <a class="menubotones" id="b4" href="#fourthcont">Productos</a>
+            <a class="dropdown-toggle dropdown menubotones" id="b5" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
 
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li><a class="dropdown-item" href="index.html#footer">Contáctanos</a></li>
@@ -184,7 +185,7 @@
                     <form id="formulario-1">
                         <label id="label" for="correo"><h4>Dirección de Correo: &#128236;</h4></label> <br>
                         <input id="campo-1" type="email" name="correo" placeholder="alguien@email.com"> <br>
-                        <input class="btn cardbotones" id="submit" type="submit" onclick="alert('Funcionalidad no disponible')" name="submit" value="Subscribirme">
+                        <input class="btn" id="submit" type="submit" onclick="alert('Funcionalidad no disponible')" name="submit" value="Subscribirme">
                     </form>
                 </div>
             </div>
@@ -418,12 +419,26 @@
 
     <div id="fourthcont">
         <div id="fourthcont-1">
+            <!--
             <div id="fourth-1-upper">
-                <div id="foc-text">
-                    <h2></h2>
+                <div id="upper-1">
+                    <div id="foc-text" class="innertextdiv">
+                        <h2>Tenemos lo Mejor del Mercado</h2>
+                        <br>
+                        <p>
+                            Contamos con una amplia variedad de productos informáticos.
+                            Nos encanta que nuestros clientes se queden satisfechos con 
+                            su compra. Una gran cantidad de personas obtienen con nosotros
+                            ese ordenador gaming tan deseado o tal vez un remplazo para 
+                            ese móvil defectuoso... Ofrecemos artículos de primera calidad 
+                            a un precio muy asequible. Sin duda con nosotros no te arrepentirás.
+                            Ah y no olvides que si no te convence algo...simplemente... 
+                            ¡Devuélvelo!
+                        </p>
+                    </div>
                 </div>
-            </div>
-
+            </div>-->
+            
             <div id="fourth-1-lower">
                 <div id="product-cards">
                     <div id="pc-row-1" class="pc-rows">
@@ -432,7 +447,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Hardware</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn cardbotones">Go somewhere</a>
+                                <a class="btn cardbotones">Saber más</a>
                             </div>
                         </div>
                         <div id="card-6" class="card pc-card">
@@ -440,7 +455,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Gaming</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn cardbotones">Go somewhere</a>
+                                <a class="btn cardbotones">Saber más</a>
                             </div>
                         </div>
                         <div id="card-7" class="card pc-card">
@@ -448,7 +463,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Network</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn cardbotones">Go somewhere</a>
+                                <a class="btn cardbotones">Saber más</a>
                             </div>
                         </div>
                     </div>
@@ -458,7 +473,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Office</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn cardbotones">Go somewhere</a>
+                                <a class="btn cardbotones">Saber más</a>
                             </div>
                         </div>
                         <div id="card-9" class="card pc-card">
@@ -466,7 +481,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Software</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn cardbotones">Go somewhere</a>
+                                <a class="btn cardbotones">Saber más</a>
                             </div>
                         </div>
                         <div id="card-10" class="card pc-card">
@@ -474,9 +489,74 @@
                             <div class="card-body">
                                 <h5 class="card-title">Mobile</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn cardbotones">Go somewhere</a>
+                                <a class="btn cardbotones">Saber más</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div id="fourthcont-mitad">
+                    <div id="reviews-div">
+                        <div id="reviews">
+                            <span id="reviews-title">Reviews</span>
+                            <span><i class="bi bi-star-fill"></i></span>
+                            <span><i class="bi bi-star-fill"></i></span>
+                            <span><i class="bi bi-star-fill"></i></span>
+                            <span><i class="bi bi-star-fill"></i></span>
+                            <span><i class="bi bi-star-half"></i></span>
+                            <p>4.1 average based on 254 reviews.</p>
+                            <hr style="border:3px solid #f1f1f1">
+                            
+                            <div id="div-barras">
+                                <div class="barras-row">
+                                    <div class="barra-izq">5 estrellas</div>
+                                    <div class="progress barra">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="barra-der">100</div>
+                                </div>
+                                <div class="barras-row">
+                                    <div class="barra-izq">4 estrellas</div>
+                                    <div class="progress barra">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="barra-der">80</div>
+                                </div>
+                                <div class="barras-row">
+                                    <div class="barra-izq">3 estrellas</div>
+                                    <div class="progress barra">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="barra-der">60</div>
+                                </div>
+                                <div class="barras-row">
+                                    <div class="barra-izq">2 estrellas</div>
+                                    <div class="progress barra">
+                                        <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="barra-der">40</div>
+                                </div>
+                                <div class="barras-row">
+                                    <div class="barra-izq">1 estrella</div>
+                                    <div class="progress barra">
+                                        <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="barra-der">20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="otro-div">
+                        
+                    </div>
+                    <div id="sticky-4" class="sticky">
+                        <img class="sticky-item" src="icons/sticky.svg">
+                        <div>>>></div>
+                        <p class="sticky-item">
+                            Debes tener muy bien en cuenta todos estos consejos en todo momento
+                            si estás conectado a Internet... No querrás ser una víctima más... ¿Verdad?.
+                            Puedes registrarte en el botón de abajo y comunicarte con nosotros si necesitas 
+                            ayuda... &#128071; &#128071;
+                        </p>
                     </div>
                 </div>
             </div>
@@ -505,8 +585,125 @@
 
 
 
-<!--<footer id="footer">
-  <div id="logo2">
+<footer id="footer">
+    <div id="footer-div1" class="footer-div">
+        <div id="main-footer">
+            <div id="section-1" class="footer-section">
+                <div id="indicator-1" class="footer-indicator"></div>
+                <div id="content-1" class="footer-content">
+                    <h5>Ayuda</h5>
+                    <ul id="ayuda-list" class="footer-list">
+                        <li><a href="" class="ayuda-links">Sobre Nosotros</a></li>
+                        <li><a href="" class="ayuda-links">Preguntas Frecuentes</a></li>
+                        <li><a href="" class="ayuda-links">Centro de Soporte</a></li>
+                        <li><a href="" class="ayuda-links">Aviso Legal</a></li>
+                        <li><a href="" class="ayuda-links">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="section-2" class="footer-section">
+                <div id="indicator-2" class="footer-indicator">
+                </div>
+                <div id="content-2" class="footer-content">
+                    <h5>Por qué comprar</h5>
+                    <ul id="why-list" class="footer-list">
+                        <li><a href="" class="why-links">Formas de Pago</a></li>
+                        <li><a href="" class="why-links">Opiniones de Clientes</a></li>
+                        <li><a href="" class="why-links">Descuentos</a></li>
+                        <li><a href="" class="why-links">Gastos de Envío</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="section-3" class="footer-section">
+                <div id="indicator-3" class="footer-indicator">
+
+                </div>
+                <div id="content-3" class="footer-content">
+                    <h5>Contactar</h5>
+                    <ul id="cantactar-list" class="footer-list">
+                        <li><a href="" class="contactar-links">Devoluciones y Garantías</a></li>
+                        <li><a href="" class="contactar-links">Trabaja con Nosotros</a></li>
+                        <li><a href="" class="contactar-links">Contacto</a></li>
+                        <li><a href="" class="contactar-links">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="section-4" class="footer-section">
+                <div id="indicator-4" class="footer-indicator">
+
+                </div>
+                <div id="content-4" class="footer-content">
+                    <h5>Otros</h5>
+                    <ul id="otros-list" class="footer-list">
+                        <li><a href="" class="otros-links">Marketplace</a></li>
+                        <li><a href="" class="otros-links">Cita Asistencia Técnica</a></li>
+                        <li><a href="" class="otros-links">Reparaciones</a></li>
+                        <li><a href="" class="otros-links">Responsabilidad Social</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="pais-button-div" class="dropdown">
+            <a id="pais-button" class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              País
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">España</a></li>
+              <li><a class="dropdown-item" href="#">Estados Unidos</a></li>
+              <li><a class="dropdown-item" href="#">Alemania</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer-div2" class="footer-div">
+        <div id="social-newsletter-div">
+            <div id="footer-newsletter">
+                <div id="footer-newsletter-text">
+                    <p>
+                        Subscríbete a nuestra newsletter o 
+                        <a href="pages/acceso.html">regístrate</a>
+                        para mejorar tu experiencia
+                    </p>
+                </div>
+                <form id="formulario-2">
+                    <input id="campo-2" type="email" name="correo-2" placeholder="alguien@email.com">
+                    <input class="btn" id="submit-2" type="submit" onclick="alert('Funcionalidad no disponible')" name="submit-2" value="Subscribirme">
+                </form>
+            </div>
+
+            <div id="footer-social">
+                <div id="social-text">Síguenos</div>
+                <div id="social-icons">
+                    <a id="facebook" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a id="twitter" href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+                    <a id="youtube" href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                    <a id="instagram" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                    <a id="linkedin" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-div3" class="footer-div">
+        <div id="copyright-menu-div">
+            <div id="footer-copyright">
+                <h6>&copy; 2022 Luis Barcelo. All rights reserved.</h6>
+            </div>
+            <div id="footer-menu">
+                <a href="index.html">Inicio</a>
+                <a href="destacado.html">Destacado</a>
+                <a href="productos.html">Productos</a>
+                <a href="productos.html">Top Tips</a>
+                <a href="productos.html">Productos</a>
+                <a href="productos.html">Contáctanos</a>
+                <a href="productos.html">Sobre Nosotros</a>
+                <a id="parajuanan" href="productos.html">Para Juanan</a>
+                <a id="presentacion" href="productos.html">Presentación</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--
+      <div id="logo2">
     <img src="imagenes/logo.svg">
   </div>
   <div>
@@ -526,7 +723,7 @@
   <div>
     Copyright@ 2022 - Luis Barcelo
   </div>
-</footer>-->
+-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="site.js"></script>
 </body>
