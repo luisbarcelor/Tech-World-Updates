@@ -17,7 +17,7 @@ html {
 body {
 	height: 100%;
 	width: 100%;
-	overflow: scroll;
+	overflow-y: scroll;
 	font-family: Fredoka;
 }
 
@@ -188,9 +188,9 @@ header {
 /*CONTENIDO*/
 
 main {
-	height: 300rem;
+	height: auto;
 	width: 100%;
-	/*background-color: red;*/
+	background-color: red;
 }
 
 .carousel-item {
@@ -771,10 +771,98 @@ title h1 {
 
 /*THIRD CONTAINER END*/
 
-#fourthcont {
-	overflow: hidden;
-	height: 10%;
-	background-color: blueviolet;
-	padding-top: 2%;
-	margin-top: 2%;
+/*BANNER*/
+
+#banner {
+	/*background-color: red;*/
+	width: 100%;
+	height: auto;
+	padding: 0;
 }
+
+#banner:hover {
+	opacity: 0.9;
+}
+
+#banner:active {
+	opacity: 0.7;
+}
+
+/*BANNER END*/
+
+/*FOURTH CONTAINER*/
+
+#fourthcont {
+	height: auto;
+	width: 100%;
+	padding: 3.5%;
+	/*background-color: blueviolet;*/
+}
+
+#fourthcont-1 {
+	display: flex;
+	flex-direction: column;
+	background-color: #242424;
+	padding: 3%;
+	border-radius: 20px;
+	height: auto;
+	width: 100%;
+	color: #111111;
+}
+
+#fourth-1-upper {
+	width: 100%;
+	height: auto;
+	background-color: purple;
+}
+
+#fourth-1-lower {
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+	background-color: yellow;
+}
+
+#product-cards {
+	display: flex;
+	width: 60%;
+	height: 100%;
+	flex-direction: column;
+	font-size: small;
+	background-color: green;
+}
+
+.pc-rows {
+	display: flex;
+	height: 50%;
+	width: 100%;
+	padding: 3%;
+}
+
+#card-6, #card-7 {
+	margin-left: 3%;
+}
+
+#card-9, #card-10 {
+	margin-left: 3%;
+}
+
+#pc-row-1 {
+	/*background-color: aqua;*/
+	padding-bottom: 0;
+	margin-bottom: 3%;
+}
+
+#pc-row-2 {
+	/*background-color: red;*/
+	padding-top: 0;
+
+}
+
+/*FOURTH CONTAINER END*/
+
+/*FOOTER*/
+
+/*FOOTER END*/
+
