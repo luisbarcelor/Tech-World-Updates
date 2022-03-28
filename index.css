@@ -512,6 +512,8 @@ title h1 {
 
 .card:hover {
 	box-shadow: 0 0 10px 3px #fcba03;
+	transition: 0.5s;
+	transform: scale(1.05);
 }
 
 #card-1, #card-3 {
@@ -638,6 +640,10 @@ title h1 {
 	background-color: #E03F3F;
 	border: 3px solid #fcba03;
 	transition: 0.3s;
+}
+
+#thirdcont-accordion:focus-within {
+	box-shadow: 0 0 10px 3px #fcba03;
 }
 
 #thirdcont-accordion:hover {
