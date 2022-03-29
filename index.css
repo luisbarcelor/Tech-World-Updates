@@ -1044,7 +1044,7 @@ title h1 {
 }
 
 #footer-logo img {
-	width: 15%;
+	width: 15rem;   											/*MODIFIED*/
 }
 
 .footer-div {
@@ -1109,7 +1109,7 @@ title h1 {
 	width: 100%;
 	padding-left: 2%;
 	/*background-color: red;*/
-	font-size: small;
+	font-size: 0.9rem;										/*MODIFIED*/
 	margin-bottom: 0;
 }
 
@@ -1279,7 +1279,7 @@ title h1 {
 #social-icons {
 	display: flex;
 	justify-content: space-between;
-	font-size: xx-large;
+	font-size: 2rem;											/*MODIFIED*/
 	width: 50%;
 	/*background-color: aqua;*/
 	padding-left: 2%;
@@ -1302,10 +1302,11 @@ title h1 {
 #footer-copyright {
 	margin-bottom: 1%;
 	color: #8a8a8a;
+	font-size: 0.9rem;												/*ADDED*/
 }
 
 #footer-menu {
-	font-size: 0.9rem;
+	font-size: 0.8rem;												/*MODIFIED*/
 }
 
 #footer-menu a {
@@ -1324,3 +1325,9 @@ title h1 {
 }
 
 /*FOOTER END*/
+
+@media only screen and (max-width: 1366px) {						/*ADDED*/
+	html {
+		font-size: 11px;
+	}
+}
