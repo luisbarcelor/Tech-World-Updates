@@ -1329,8 +1329,13 @@ title h1 {
 
 /*FOOTER END*/
 
+
+/*MEDIA QUERYS*/
+
 @media only screen and (max-width: 1366px) {						/*ADDED*/
 	html {
 		font-size: 11px;
 	}
 }
+
+/*MEDIA QUERYS END*/
